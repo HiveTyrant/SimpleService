@@ -1,0 +1,6 @@
+D:\Project\Test\C#\WCF\WCFNetTCPBindingTest\SimpleService\bin\Debug\SimpleService.dll
+D:\Project\Test\C#\WCF\WCFNetTCPBindingTest\SimpleService\bin\Debug\SimpleService.pdb
+D:\Project\Test\C#\WCF\WCFNetTCPBindingTest\SimpleService\obj\Debug\SimpleService.csprojResolveAssemblyReference.cache
+D:\Project\Test\C#\WCF\WCFNetTCPBindingTest\SimpleService\obj\Debug\SimpleService.csproj.CoreCompileInputs.cache
+D:\Project\Test\C#\WCF\WCFNetTCPBindingTest\SimpleService\obj\Debug\SimpleService.dll
+D:\Project\Test\C#\WCF\WCFNetTCPBindingTest\SimpleService\obj\Debug\SimpleService.pdb

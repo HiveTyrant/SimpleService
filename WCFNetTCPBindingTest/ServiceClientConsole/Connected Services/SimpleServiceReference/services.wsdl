@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://schemas.gibe.dk/services" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SimpleService" targetNamespace="http://schemas.gibe.dk/services" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_ISimpleService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.gibe.dk/services/Imports">
+      <xsd:import schemaLocation="" namespace="http://schemas.gibe.dk/services" />
+      <xsd:import schemaLocation="" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISimpleService_Subscribe_InputMessage">
+    <wsdl:part name="parameters" element="tns:Subscribe" />
+  </wsdl:message>
+  <wsdl:message name="ISimpleService_Subscribe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubscribeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISimpleService_Unsubscribe_InputMessage">
+    <wsdl:part name="parameters" element="tns:Unsubscribe" />
+  </wsdl:message>
+  <wsdl:message name="ISimpleService_Unsubscribe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnsubscribeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISimpleService_Ping_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ping" />
+  </wsdl:message>
+  <wsdl:message name="ISimpleService_Ping_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PingResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISimpleService_StatusUpdated_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:StatusUpdated" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="true" name="ISimpleService">
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Subscribe">
+      <wsdl:input wsaw:Action="http://schemas.gibe.dk/services/ISimpleService/Subscribe" message="tns:ISimpleService_Subscribe_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.gibe.dk/services/ISimpleService/SubscribeResponse" message="tns:ISimpleService_Subscribe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Unsubscribe">
+      <wsdl:input wsaw:Action="http://schemas.gibe.dk/services/ISimpleService/Unsubscribe" message="tns:ISimpleService_Unsubscribe_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.gibe.dk/services/ISimpleService/UnsubscribeResponse" message="tns:ISimpleService_Unsubscribe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Ping">
+      <wsdl:input wsaw:Action="http://schemas.gibe.dk/services/ISimpleService/Ping" message="tns:ISimpleService_Ping_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.gibe.dk/services/ISimpleService/PingResponse" message="tns:ISimpleService_Ping_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="StatusUpdated">
+      <wsdl:output wsaw:Action="http://schemas.gibe.dk/services/ISimpleService/StatusUpdated" message="tns:ISimpleService_StatusUpdated_OutputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_ISimpleService" type="tns:ISimpleService">
+    <wsp:PolicyReference URI="#NetTcpBinding_ISimpleService_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="Subscribe">
+      <soap12:operation soapAction="http://schemas.gibe.dk/services/ISimpleService/Subscribe" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Unsubscribe">
+      <soap12:operation soapAction="http://schemas.gibe.dk/services/ISimpleService/Unsubscribe" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ping">
+      <soap12:operation soapAction="http://schemas.gibe.dk/services/ISimpleService/Ping" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StatusUpdated">
+      <soap12:operation soapAction="http://schemas.gibe.dk/services/ISimpleService/StatusUpdated" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SimpleService">
+    <wsdl:port name="NetTcpBinding_ISimpleService" binding="tns:NetTcpBinding_ISimpleService">
+      <soap12:address location="net.tcp://localhost:8081/SimpleService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:8081/SimpleService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

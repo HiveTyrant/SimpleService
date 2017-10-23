@@ -1,0 +1,9 @@
+D:\Project\Test\C#\WCF\WCFNetTCPBindingTest\ServiceConsoleHost\obj\Debug\ServiceConsoleHost.csprojResolveAssemblyReference.cache
+D:\Project\Test\C#\WCF\WCFNetTCPBindingTest\ServiceConsoleHost\obj\Debug\ServiceConsoleHost.csproj.CoreCompileInputs.cache
+D:\Project\Test\C#\WCF\WCFNetTCPBindingTest\ServiceConsoleHost\bin\Debug\ServiceConsoleHost.exe.config
+D:\Project\Test\C#\WCF\WCFNetTCPBindingTest\ServiceConsoleHost\bin\Debug\ServiceConsoleHost.exe
+D:\Project\Test\C#\WCF\WCFNetTCPBindingTest\ServiceConsoleHost\bin\Debug\ServiceConsoleHost.pdb
+D:\Project\Test\C#\WCF\WCFNetTCPBindingTest\ServiceConsoleHost\obj\Debug\ServiceConsoleHost.exe
+D:\Project\Test\C#\WCF\WCFNetTCPBindingTest\ServiceConsoleHost\obj\Debug\ServiceConsoleHost.pdb
+D:\Project\Test\C#\WCF\WCFNetTCPBindingTest\ServiceConsoleHost\bin\Debug\SimpleService.dll
+D:\Project\Test\C#\WCF\WCFNetTCPBindingTest\ServiceConsoleHost\bin\Debug\SimpleService.pdb

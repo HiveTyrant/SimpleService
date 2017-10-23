@@ -1,0 +1,7 @@
+D:\Project\Test\C#\WCF\WCFNetTCPBindingTest\ServiceClientConsole\obj\Debug\ServiceClientConsole.csprojResolveAssemblyReference.cache
+D:\Project\Test\C#\WCF\WCFNetTCPBindingTest\ServiceClientConsole\obj\Debug\ServiceClientConsole.csproj.CoreCompileInputs.cache
+D:\Project\Test\C#\WCF\WCFNetTCPBindingTest\ServiceClientConsole\bin\Debug\ServiceClientConsole.exe.config
+D:\Project\Test\C#\WCF\WCFNetTCPBindingTest\ServiceClientConsole\bin\Debug\ServiceClientConsole.exe
+D:\Project\Test\C#\WCF\WCFNetTCPBindingTest\ServiceClientConsole\bin\Debug\ServiceClientConsole.pdb
+D:\Project\Test\C#\WCF\WCFNetTCPBindingTest\ServiceClientConsole\obj\Debug\ServiceClientConsole.exe
+D:\Project\Test\C#\WCF\WCFNetTCPBindingTest\ServiceClientConsole\obj\Debug\ServiceClientConsole.pdb
